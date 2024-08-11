@@ -1,9 +1,9 @@
 .inter-font{
   font-family: "Inter", sans-serif;
 }
-/* *{
+*{
     margin: 0px;
-} */
+}
 
 /* shared styles */
 .primary-color{
@@ -13,10 +13,18 @@
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
     font-weight: 400;
+    margin-top: 10px;
+}
+.section-title{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 10px;
 }
 /* header styles */
 header{
     background-color: black;
+    padding: 30px;
 }
 .navbar{
     display: flex;
@@ -74,9 +82,14 @@ header{
     width: 100%;
 }
 .header-title{
-    font-size: 4.8rem;
+    font-size: 4rem;
     font-weight: 900;
     color: white;
+}
+.span{
+    font-family: "Style Script", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 .header-btn1{
     background-color: rgb(230, 83, 60);
@@ -86,7 +99,8 @@ header{
     border-radius: 35px;
     border: none;
     padding: 20px 30px;
-    margin-right: 20px;
+    margin-right: 15px;
+    margin-top: 10px;
 }
 .header-btn2{
     color: white;
@@ -96,6 +110,7 @@ header{
     border-radius: 35px;
     border: 2px solid white;
     padding: 20px 30px;
+    margin-top: 10px;
 }
 .floating-btn1{
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -135,8 +150,7 @@ header{
     background: rgba(48, 48, 48, 0.54);
     text-align: center;
     padding: 20px 30px;
-    margin-left: 200px;
-    margin-top: -1000px;
+    transform: translate(100%, 450px);
 
 }
 .btn2-title{
@@ -149,11 +163,180 @@ header{
     font-weight: 400px;
     color: rgba(239, 237, 232, 0.65);
 }
+/* main : change-habit styles */
+.change-habit{
+    background-color: black;
+    padding: 50px;
+}
+.change-habit-title{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.change-habit-description{
+    text-align: center;
+}
+.change-habit-image{
+    display: flex;
+    gap: 30px;
+}
+.change-habit-image img{
+    border-radius: 50%;
+    border: 3px solid rgb(24, 23, 23);
+}
+.card-title{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 5px 0px;
+}
+.change-habit-card{
+    text-align: center;
+    margin-top: 20px;
+}
+/* main : run-extra styles */
+.run-extra{
+    background-color: black;
+    padding: 50px 100px;
+}
+.run-container{
+    display: flex;
+    gap: 150px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(34,34,34);
+    padding: 30px;
+    border-radius: 12px;
+}
+.run-img img{
+    border-radius: 12px;
+    border: none;
+    width: 100%;
+}
+.run-btn{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+/* main: bmi styles */
+.bmi{
+    background-color: rgb(34,34,34);
+}
+table{
+    border-collapse: collapse;
+}
+td{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
+    text-align: center;
+    padding: 10px;
+}
+.head{
+    font-weight: 700;
+}
+.bmi-table-title{
+    padding: 20px 0px;
+}
+.bmi{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    padding: 30px;
+}
+.bmi-input{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-top: 10px;
+    /* justify-content: space-evenly; */
+}
+.input input{
+    padding: 15px 120px 15px 10px;
+    background-color: rgb(55, 55, 55);
+    color:rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 5px;
+}
 
+/* main: meet styles */
+.meet{
+    background-color: black;
+    padding: 20px 50px;
+}
+.meet-info{
+    text-align: center;
+}
+.meet-img-container{
+    background-color:rgb(34,34,34) ;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    align-items: center;
+    justify-items: center;
+    margin: 20px 160px;
+    padding: 30px;
+    border-radius: 8px;
+}
+.meet-img-container img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.trainer-name{
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+}
+.trainer-info{
+    margin-left: 20px;
+    margin-top: -60px;
+}
+.meet-card{
+    height: 300px;
+    width: 300px;
+}
+/* footer styles */
+footer{
+    background-color: rgb(34,34,34);
+    padding: 50px 150px;
+}
+.footer-title{
+    font-weight: 800;
+    font-size: 3rem;
+    font-style: italic;
+}
+.footer-container{
+    display: flex;
+    gap: 100px;
+    justify-content: space-evenly;
+}
+.get-title{
+    margin-left: 36px;
+    font-size: 1.75rem;
+    font: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+.footer-list{
+    list-style: none;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 15px;
+}
+.copyright{
+    text-align: center;
+}
+hr{
+    margin: 40px 20px;
+}
 /* smaller device styles */
 @media screen and (max-width:576px) {
-    .header{
+    .header, .change-habit-image, .run-container, .footer-container, .bmi{
         flex-direction: column;
+    }
+    .meet-img-container{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px;
+        padding: 30px; 
     }
     .header{
         margin: 20px;
@@ -170,5 +353,21 @@ header{
         margin: 50px;
         justify-content: space-between;
         gap: 50px;
+    }
+    .run-extra{
+        padding: 25px;
+    }
+    .run-container{
+        gap: 30px;
+    }
+    .meet{
+        padding: 20px;
+    }
+    footer{
+        padding: 20px;
+        justify-items: start;
+    }
+    .input input{
+        padding: 15px 40px 15px 10px;
     }
 }
