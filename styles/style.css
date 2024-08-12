@@ -118,14 +118,13 @@ header{
     backdrop-filter: blur(20px);
     background: rgba(48, 48, 48, 0.54);
     text-align: center;
-    padding: 20px 30px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
-    margin-left: -60px;
-    margin-top: -200px;
-
+    position: relative;
+    bottom: 150px;
 }
 .btn1-title{
     font-size: 1.5rem;
@@ -149,9 +148,10 @@ header{
     backdrop-filter: blur(20px);
     background: rgba(48, 48, 48, 0.54);
     text-align: center;
-    padding: 20px 30px;
-    transform: translate(100%, 450px);
-
+    padding: 10px 10px;
+    position: relative;
+    top: -450px;
+    left: 170px;
 }
 .btn2-title{
     font-size: 2.5rem;
@@ -247,16 +247,31 @@ td{
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
     margin-top: 10px;
-    /* justify-content: space-evenly; */
 }
 .input input{
-    padding: 15px 120px 15px 10px;
+    padding: 15px 100px 15px 10px;
     background-color: rgb(55, 55, 55);
     color:rgba(255, 255, 255, 0.5);
     border: none;
     border-radius: 5px;
 }
-
+/* .box5{
+    grid-column: span 2;
+} */
+#bmi-description{
+    width: 50%;
+}
+.calculate-btn{
+    background-color: rgb(230, 83, 60);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 35px;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
 /* main: meet styles */
 .meet{
     background-color: black;
@@ -370,6 +385,7 @@ hr{
         justify-items: start;
     }
     .input input{
-        padding: 15px 40px 15px 10px;
+        width: 70%;
+        padding: .9rem 2.5rem .9rem .6rem;
     }
 }
